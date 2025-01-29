@@ -1,0 +1,29 @@
+#!/bin/bash
+swaylock \
+  --daemonize \
+  --font "JetBrainsMono Nerd Font Bold" \
+  --effect-pixelate 5 --clock \
+  --effect-blur 10x10 \
+  --timestr %R --indicator \
+  --datestr "%a, %d-%m-%Y" \
+  --indicator-radius 100 \
+  --indicator-thickness 10 \
+  --inside-color 00000070 \
+  --inside-ver-color 00000070 \
+  --inside-wrong-color 00000070 \
+  --inside-clear-color 00000070 \
+  --ring-clear-color 81A1C1 \
+  --ring-color 00000050 \
+  --separator-color 5E81AC \
+  --line-color D8DEE9 \
+  --line-wrong-color BF616A \
+  --line-ver-color BF616A \
+  --line-clear-color BF616A \
+  --key-hl-color 81A1C1 \
+  --bs-hl-color FF008D \
+  --text-color D8DEE9 \
+  --text-ver-color D8DEE9 \
+  --text-wrong-color D8DEE9 \
+  --text-clear-color D8DEE9 \
+  --effect-vignette 0.5:0.5 \
+  --image "$HOME/.config/hypr/wallpapers/pastel-city.png"
