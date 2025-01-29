@@ -1,0 +1,1 @@
+Personal Hyprland configuration file
