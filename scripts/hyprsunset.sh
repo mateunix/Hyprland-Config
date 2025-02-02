@@ -6,6 +6,7 @@ NIGHT_TEMP=3000 # Night color temperature in Kelvin
 
 # Hyprsunset command path
 HYPRSUNSET="hyprsunset"
+HYPRCTL="hyprctl reload"
 
 # Function to calculate if it's day or night based on time
 is_night_time() {
@@ -24,10 +25,11 @@ update_hyprsunset() {
   else
     $HYPRSUNSET -t $DAY_TEMP
   fi
+  $HYPRCTL # Reload Hyprland configuration
 }
 
 # Run the script in a loop to continuously check the time
 while true; do
   update_hyprsunset
-  sleep 300 # Check every 5 minutes
+  sleep 3600 # Check every hour
 done
